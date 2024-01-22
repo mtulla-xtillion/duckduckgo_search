@@ -18,3 +18,7 @@ class MapsResult:
     source: Optional[str] = None
     links: Optional[str] = None
     hours: Optional[Dict[str, str]] = None
+    category: Optional[str] = None
+    price: Optional[float] = None
+    rating: Optional[float] = None
+    num_reviews: Optional[int] = None

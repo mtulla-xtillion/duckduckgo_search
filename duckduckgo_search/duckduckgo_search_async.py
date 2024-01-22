@@ -802,6 +802,10 @@ class AsyncDDGS(metaclass=GoogleDocstringInheritanceMeta):
                         result.links = res["embed"].get("third_party_links", "")
                         result.desc = res["embed"].get("description", "")
                     result.hours = res["hours"]
+                    result.category = res["ddg_category"]
+                    result.price = res["price"]
+                    result.rating = res["rating"]
+                    result.num_reviews = res["reviews"]
                     yield result.__dict__
                     if max_results and len(cache) >= max_results:
                         return
